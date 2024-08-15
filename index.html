@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--CSS Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Michael Keenan | Senior Software Engineer</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>Michael Keenan</h1>
+    <ul class="navigation">
+      <li><a onclick="scrollToId('moreAbout');" class="nav-link">About</a></li>
+      <li><a onclick="scrollToId('skills');" class="nav-link">Skills</a></li>
+      <li><a onclick="scrollToId('projects');" class="nav-link">Projects</a></li>
+      <li><a onclick="scrollToId('contact');" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+      <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+    </button>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <img src="assets/images/mick-shot.svg" alt="jane-doe" loading="lazy" class="hero-img" />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-title">About Me</h2>
+      <div class="bio-imgs">
+        <div id="bioImgs">
+          <img src="assets/images/michael5.png" alt="" loading="lazy" id="bioImg"/>
+        </div>
+      </div>
+      <p class="bio-text">
+        I'm Michael Keenan, a seasoned kdb+ Consultant with over a decade of experience in delivering high-performance data solutions across multiple industries.
+        I solve problems in financial services, pharma, genomics, satellite imagery analysis and others.
+        I specialize in designing, managing, and deploying robust kdb+ and q systems that handle complex, time-sensitive data with speed and precision.
+        Whether it's real-time analytics or large-scale data management, I bring a deep technical expertise and a passion for solving challenging problems to every project I undertake.
+        <br></br>
+        <span>
+          Read More
+          <i class="scroll-down" onclick="scrollToId('moreAbout');"><img src="assets/icons/icons8-down.gif" alt="ReadMore" id="downIcon" /></i>
+        </span>
+      </p>
+    </div>
+  </section>
+
+  <!-- More about -->
+  <section id="moreAbout" class="more-about">
+    <h2>More About Me</h2>
+    Originally from Ireland, I embarked on my professional journey with KX (formerly First Derivatives) in 2014, where I first immersed myself in the world of kdb+ and q. Since then, my career has been fueled by a deep passion for technology and an unwavering commitment to excellence. Over the past decade, I’ve had the privilege of working on pioneering projects that stretch the limits of what can be achieved with high-performance databases. Whether it’s optimizing intricate data systems for financial institutions or crafting innovative solutions for real-time analytics, I’m driven by challenges that demand both deep technical expertise and creative problem-solving.
+
+    As the founder of Data Warehouse Solutions, LLC, I’ve taken on leadership roles that extend beyond technical execution. I’ve led teams, mentored colleagues, and collaborated closely with clients to deliver solutions that are not only technically robust but also strategically aligned with business objectives. My approach is hands-on and client-centric, ensuring that every project I undertake meets the highest standards of quality, performance, and reliability.
+
+    In addition to my technical prowess, I have a proven track record in leadership, having managed and mentored development teams at RxDataScience Inc. and KX. In these roles, I guided teams through complex challenges such as data loading, system integrity, and performance optimization, ensuring that our solutions consistently met stringent standards of accuracy and dependability.
+
+    When I’m not deep in code or designing sophisticated data architectures, I’m constantly exploring the latest technological trends, expanding my knowledge, and seeking out new challenges. I believe that the intersection of technology and creativity is where the most exciting innovations happen, and I’m always eager to discover new opportunities for growth and innovation.
+  </section>
+
+  <!-- Skills section -->
+  <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img src="assets/icons/kx.jpg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-bash.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+      </div>
+
+      <div class="second-set animate__animated animate__pulse">
+        <img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-angularjs.svg" alt="" loading="lazy" class="icon icon-card" />
+        <!-- angularJS, C, C++ -->
+      </div>
+      <div class="third-set animate__animated animate__pulse">
+        <img src="assets/icons/icons8-aws.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-cpp.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-c.svg" alt="" loading="lazy" class="icon icon-card" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Public Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img src="assets/images/teachnangael.jpg" alt="Teach na nGael" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Teach na nGael (webApp)</h3>
+        <p class="project-details">
+          I developed a web application which helps users lean the Irish language.
+          >4,500 Irish sentences along with their english translations.
+          Includes search functionality and speech synthesis to allow the user to hear the sentence spoken with native phenomes.
+          I uploaded the project to github and I documented my progress on youtube.
+          I recieved thousands of users from across the globe, the project is still in use.
+        </p>
+        <a href="https://mkeenan-kdb.github.io/gaeilge_web_project/" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="assets/images/datadive.jpg" alt="DataDive" loading="lazy" class="project-pic" />
+        <h3 class="project-title">'snpDive' Personal Genetic Analysis</h3>
+        <p class="project-details">
+          This project relyed on multiple large biological datasets, combined with multiple tools, to ultimately label any user's personal genetic information with in-depth and research-backed annotation data.
+          After the data is annotated (typically ~1,000,000 records), it can be viewed and queried (quickly) using 'DataDive', another kdb+ specific web application I developed.
+        </p>
+        <a href="https://github.com/mkeenan-kdb/snpDive" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="assets/images/yt.jpg" alt="YouTube" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Data Dive</h3>
+        <p class="project-details">
+          Tell the Q script where your kdb+ database resides, open your browser and be able to easily see your tables and metrics like record count, column count, table format (Binary/Splayed/Partitioned).
+          Click a table name to query see the table and visually inspect the data.
+          Apply specific operations to to specific columns - FAST!
+        </p>
+        <a href="https://github.com/mkeenan-kdb/DataDive" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="contact" id="contact">
+    <h2>Get In Touch With Me</h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="javascript:sendMail();" method="POST">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required />
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
+          </div>
+          <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social accounts - Fixed to the right -->
+  <div class="socials">
+    <a href="https://github.com/mkeenan-kdb" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon" /></a>
+    <a href="https://www.linkedin.com/in/michael-keenan-kdb/" target="_blank"><img src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon" /></a>
+    <a href="https://www.youtube.com/@UncleMick" target="_blank"><img src="assets/icons/icons8-youtube.gif" alt="Youtube" loading="lazy" class="socicon" /></a>
+  </div>
+
+  <!-- Scroll to top -->
+  <i class="scroll-up" id="scroll-up"><img src="assets/icons/icons8-upward-arrow.gif" class="socicon up-arrow" alt="" /></i>
+
+  <!-- Footer section -->
+  <footer>
+    <p class="copy">&copy; Copyright 2024</p>
+    <p class="copy">
+      Built with &#x2661; by
+      <a href="https://twitter.com/Ksound22" target="_blank">Michael Keenan</a>
+    </p>
+  </footer>
+
+  <!-- Website scripts -->
+  <script src="assets/js/app.js"></script>
+
+  <!-- Ion icons scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
